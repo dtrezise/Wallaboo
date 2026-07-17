@@ -1,0 +1,5 @@
+.DS_Store
+__pycache__/
+*.pyc
+financials/node_modules
+outputs/*.inspect.ndjson
