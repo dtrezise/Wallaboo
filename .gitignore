@@ -1,5 +1,11 @@
 .DS_Store
 __pycache__/
 *.pyc
-financials/node_modules
-outputs/*.inspect.ndjson
+company-ops/
+private/
+outputs/
+financials/
+sources/
+prospectus/
+research/
+games/

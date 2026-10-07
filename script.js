@@ -1,3 +1,5 @@
+document.documentElement.classList.add("js");
+
 const header = document.querySelector("[data-header]");
 const menuButton = document.querySelector("[data-menu-button]");
 const nav = document.querySelector("[data-nav]");
@@ -40,7 +42,9 @@ if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-mot
   }, { threshold: 0.12 });
 
   revealItems.forEach((item) => observer.observe(item));
+  window.setTimeout(() => {
+    revealItems.forEach((item) => item.classList.add("is-visible"));
+  }, 1200);
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
-
